@@ -16,7 +16,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         navigation.navigate('Home', {
-            name: 'Hendryk', // Substitua pelo nome real
+            name: user.displayName, // Substitua pelo nome real
             email: email,
         });
 
